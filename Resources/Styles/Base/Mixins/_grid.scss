@@ -4,11 +4,11 @@
     display: grid;
 
     @if $cols != 0 {
-        grid-template-columns: repeat($cols, unquote($size));
+        grid-template-columns: repeat($cols, $size);
     }
 
     @if $rows != 0 {
-        grid-template-columns: repeat($rows, unquote($size));
+        grid-template-columns: repeat($rows, $size);
     }
 
     @if $gap != 0 {

@@ -1,0 +1,17 @@
+@use "./Base/import-mixins" as mixin;
+@use "./Base/import-functions" as function;
+@use "./Base/import-config" as config;
+
+
+.basic-sample {
+    /* This will create 4 columns grid with auto rows and gap with M size */
+    @include mixin.grid-create(4, 0, auto, config.$size-gap-m);
+
+    /* This will set text color to "text-light" and  background with primary color */
+    @include mixin.color-set(config.$color-text-light, config.$color-primary);
+
+    /* This will set hover color based on $primary color - auto detect if color should be lighter or darken */
+    &:hover {
+        background-color: function.color-hover(config.$color-primary);
+    }
+}
