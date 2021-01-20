@@ -1,0 +1,28 @@
+﻿$gap-xs: 5px;
+$gap-s: 10px;
+$gap-m: 15px;
+$gap-l: 20px;
+$gap-xl: 30px;
+$gap-xxl: 40px;
+
+$gap: $gap-m;
+
+$border-radius: 0px;
+
+// All devices width for responsivity
+$width-mobile: 560px;
+$width-tablet: 768px;
+$width-desktop: 980px;
+$width-desktop-large: 1200px;
+$width-desktop-HD: 1440px;
+$width-desktop-full-HD: 1920px;
+
+@mixin generate {
+    --gap-xs: $gap-xs;
+    --gap-s: $gap-s;
+    --gap-m: $gap-m;
+    --gap-l: $gap-l;
+    --gap-xl: $gap-xl;
+    --gap-xxl: $gap-xxl;
+    --border-radius: $border-radius;
+}

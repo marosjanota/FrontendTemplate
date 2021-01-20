@@ -1,0 +1,28 @@
+﻿$primary: #DE831D;
+$secondary: #3F93BF;
+$info: #469BC7;
+$success: #28A745;
+$warning: #D6A100;
+$error: #DC3545;
+
+$grey: #7F7F7F;
+
+$background: #FFFFFF;
+$background-sec: #EFF5F6;
+
+$text: #333333;
+$text-light: #FFFFFF;
+
+@mixin generate {
+    --color_primary: $primary;
+    --color_secondary: $secondary;
+    --color_info: $info;
+    --color_success: $success;
+    --color_warning: $warning;
+    --color_error: $error;
+    --color_grey: $grey;
+    --color_background: $background;
+    --color_background-sec: $background-sec;
+    --color_text: $text;
+    --color_text-light: $text-light;
+}

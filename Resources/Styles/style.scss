@@ -1,0 +1,13 @@
+﻿@use "./Base/reset";
+@use "./Base/variables";
+@use "./Base/classes";
+@use "./Base/Configs/fonts";
+@use "./Base/Configs/bp";
+
+@at-root {
+    //@include fonts.createFont;
+    @include variables.generate;
+    @include reset.reset;
+    @include bp.resetBpVariables;
+    @include classes.createClasses;
+}

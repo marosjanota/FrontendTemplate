@@ -1,0 +1,78 @@
+﻿@use "import-mixins" as mixin;
+
+$alignTypes: (
+    "sb": space-between, 
+    "sa": space-around, 
+    "c": center, 
+    "fe": flex-end, 
+    "fs": flex-start
+);
+
+@mixin createClasses {
+    // display
+    .d {
+        &-f {
+            display: flex;
+        }
+
+        &-if {
+            display: inline-flex;
+        }
+
+        &-n {
+            display: none;
+        }
+    }
+    // flex direction
+    .fd {
+        &-r {
+            flex-direction: row;
+        }
+
+        &-c {
+            flex-direction: column;
+        }
+    }
+    // justifi content
+    .jc {
+        @each $type, $val in $alignTypes {
+            &-#{$type} {
+                justify-content: $val;
+            }
+        }
+    }
+    // align items
+    .ai {
+        @each $type, $val in $alignTypes {
+            &-#{$type} {
+                align-items: $val;
+            }
+        }
+    }
+    // margin
+    .m {
+        &-la {
+            margin-left: auto;
+        }
+
+        &-ra {
+            margin-right: auto;
+        }
+
+        &-a {
+            margin: auto
+        }
+    }
+
+    .grid {
+        &-columns {
+            &-2 {
+                @include mixin.grid-create(2);
+            }
+
+            &-3 {
+                @include mixin.grid-create(3);
+            }
+        }
+    }
+}

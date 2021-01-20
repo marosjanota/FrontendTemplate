@@ -1,0 +1,26 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"noEmitOnError": true,
+		"noEmitHelpers": false,
+		"module": "commonjs",
+		"target": "esnext",
+		"esModuleInterop": true,
+		"lib": [
+			"DOM",
+			"ES2020",
+			"ESNext"
+		],
+		"sourceMap": true
+	},
+    "include": [
+		"./Resources/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "wwwroot",
+        "build",
+        "debug"
+    ]
+}
