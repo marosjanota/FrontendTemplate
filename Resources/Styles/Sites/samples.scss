@@ -2,7 +2,6 @@
 @use "./Base/import-functions" as function;
 @use "./Base/import-config" as config;
 
-
 .basic-sample {
     /* This will create 4 columns grid with auto rows and gap with M size */
     @include mixin.grid-create(4, 0, auto, config.$size-gap-m);
