@@ -3,7 +3,7 @@
 @use "./Base/Configs/sizes";
 @use "./Base/reset";
 @use "./Base/variables";
-@use "./Base/classes";
+@use "./Base/helpers";
 
 :root {
     @include colors.generate;
@@ -14,6 +14,5 @@
     //@include fonts.createFont;
     @include variables.generate;
     @include reset.reset;
-    @include classes.createClasses;
+    @include helpers.createClasses;
 }
-
